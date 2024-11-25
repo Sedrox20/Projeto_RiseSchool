@@ -1,0 +1,612 @@
+/* formatação de todo coporto da página */
+/* Background-color: cor de fundo */
+/* font-family: lista de fontes procuradas no sistema operacional */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+/* formatação do cabeçalho e rodapé */
+
+header{
+    background: linear-gradient(135deg, #694369, #351a40); /* Gradiente roxo escuro */
+  color: #ffffff; /* Texto branco */
+  text-align: center;
+  padding: 20px ; /* Maior espaçamento vertical */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8); /* Sombra destacada */
+  position: sticky; /* Fixa o header no topo ao rolar a página */
+  top: 0;
+  z-index: 1000; /* Certifica-se de que está acima de outros elementos */
+  
+
+}
+
+
+footer{
+    background: linear-gradient(135deg, #694369, #351a40);
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+
+}
+.navbar-nav .nav-item {
+    margin: 5px; /* Espaçamento entre as "caixinhas" */
+}
+
+/* Estilo para os links de navegação dentro das caixinhas */
+.navbar-nav .nav-item {
+    margin: 5px; /* Espaçamento entre as "caixinhas" */
+}
+
+.navbar-nav .nav-link {
+  display: inline-block; /* Faz o link se comportar como um botão */
+  padding: 10px 20px; /* Espaçamento interno */
+  background-color: #000000; /* Fundo preto */
+  border-radius: 5px; /* Bordas arredondadas */
+  color: #ffffff !important; /* Texto branco */
+  font-weight: bold; /* Texto em negrito */
+  text-align: center; /* Centraliza o texto */
+  font-size: small; /* Tamanho de texto pequeno */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #6c1e8e; /* Fundo roxo no hover */
+  color: #ffffff !important; /* Mantém o texto branco no hover */
+  transform: scale(1.05); /* Leve aumento no tamanho */
+}
+
+.sobre {
+    padding-top: 20px;
+    
+    
+}
+
+/* Estilo para o título h2 dentro da seção 'sobre' */
+.sobre h2 {
+    color: #c6a5e7; /* Roxo suave para o título */
+    font-size: 2.5rem; /* Aumentei um pouco para mais destaque */
+    font-weight: bold; /* Título em negrito */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    text-align: center; /* Centraliza o título */
+    letter-spacing: 1.2px; /* Espaçamento entre letras */
+    line-height: 1.3; /* Melhor espaçamento entre linhas */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Sombra suave para dar contraste */
+    padding-top: 10px; /* Ajuste para criar um leve espaçamento interno */
+}
+
+
+
+/* Estilo para o parágrafo dentro da seção 'sobre' */
+.sobre p {
+    color: #ffffff; /* Cor do texto escuro para melhor legibilidade */
+    font-size: 1rem;
+    line-height: 1.8; /* Espaçamento entre linhas para melhorar a leitura */
+    text-indent: 50px;  /* Recuo de 20px no início do primeiro parágrafo */
+}
+
+/* Estilo para o h6, que já está dentro de um parágrafo */
+.sobre h6 {
+    color: #ffffff; /* Cor do texto mais suave */
+    font-size: 1rem;
+    line-height: 1.8; /* Espaçamento entre linhas */
+    margin-top: 20px;
+    
+    text-align: justify; /* Justifica o texto para um alinhamento mais bonito */
+    text-indent: 50px;  /* Recuo de 20px no início do primeiro parágrafo */
+    
+}
+
+.sobre h5 {
+    color: #fefefe; /* Cor do texto mais suave */
+    font-size: 1rem;
+    line-height: 1.8; /* Espaçamento entre linhas */
+    margin-top: 20px;
+    justify-content: center;
+    text-align: justify; /* Justifica o texto para um alinhamento mais bonito */
+    text-indent: 50px;  /* Recuo de 20px no início do primeiro parágrafo */
+    
+}
+
+
+.card {
+    width: var(--card-width);
+    height: var(--card-height);
+    margin: 0 auto; /* Centraliza o card */
+    border: none; /* Remove borda desnecessária */
+}
+  
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px; /* Largura das setas */
+  height: 40px; /* Altura das setas */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  border-radius: 50%; /* Botões arredondados */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(300%); /* Ajusta o centro para alinhar */
+}
+
+.carousel-control-prev {
+  left: 100%; /* Aproxima a seta esquerda do mapa */
+}
+
+.carousel-control-next {
+  right: 80px; /* Aproxima a seta direita do mapa */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Deixa as setas brancas para contraste */
+  font-size: 80px; /* Tamanho da seta */
+  color: black; /* Cor da seta */
+  transition: transform 0.3s ease, color 0.3s ease; /* Suaviza a transformação e mudança de cor */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+
+  transition: background-color 0.3s ease; /* Suaviza o efeito */
+}
+
+.cursos h2 {
+  color: #c6a5e7; /* Roxo suave para o título */
+  font-size: 2.5rem; /* Aumentei um pouco para mais destaque */
+  font-weight: bold; /* Título em negrito */
+  margin-bottom: 15px; /* Espaçamento abaixo do título */
+  text-align: center; /* Centraliza o título */
+  letter-spacing: 1.2px; /* Espaçamento entre letras */
+  line-height: 1.3; /* Melhor espaçamento entre linhas */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Sombra suave para dar contraste */
+  padding-top: 10px; /* Ajuste para criar um leve espaçamento interno */
+  }
+  
+
+
+/* Estilo exclusivo para os cards de Cursos */
+
+.card-curso {
+    width: 70%; /* Ajuste a largura relativa do card */
+    max-width: 380px; /* Define a largura máxima */
+    margin: 0 auto; /* Centraliza o card */
+    border: none;
+    background-color: #fff;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px; /* Espaçamento adicional entre os cards e a borda */
+  }
+
+/* Ajusta a altura do carousel para dar mais espaço */
+#carouselCursos {
+  padding: 20px 0; /* Espaço interno no topo e na parte inferior */
+}
+
+
+/* Estilo para os itens do carousel */
+.carousel-inner {
+  padding-top: 20px; /* Espaçamento acima dos cards */
+   padding-bottom: 20px; /*Espaçamento abaixo dos cards */
+}
+  
+.card-curso:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+  
+.card-curso .card-img-top {
+    height: 180px; /* Reduz a altura da imagem */
+    object-fit: cover; /* Mantém a proporção sem distorcer */
+}
+  
+.card-curso .card-title {
+    font-size: 1.5rem;
+    color: #6c1e8e;
+    margin-bottom: 15px;
+}
+  
+.card-curso .card-body {
+    padding: 15px;
+}
+  
+/* Estilo geral das setas */
+.carousel-cursos-prev,
+.carousel-cursos-next {
+    width: 50px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    border: none; /* Remove bordas */
+    background: none; /* Remove fundo */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente em relação ao container */
+    transform: translateY(-50%); /* Ajuste fino para alinhar exatamente ao centro */
+    cursor: pointer; /* Mostra o ponteiro ao passar */
+    transition: transform 0.3s ease, color 0.3s ease; /* Efeitos de hover */
+}
+
+/* Posição específica das setas */
+.carousel-cursos-prev {
+    left: 20px; /* Posição da seta esquerda */
+}
+
+.carousel-cursos-next {
+    right: 20px; /* Posição da seta direita */
+}
+
+/* Estilo do ícone da seta */
+.carousel-cursos-prev-icon,
+.carousel-cursos-next-icon {
+    font-size: 80px; /* Tamanho da seta */
+    color: black; /* Cor da seta */
+    transition: transform 0.3s ease, color 0.3s ease; /* Suaviza a transformação e mudança de cor */
+}
+
+/* Efeito ao passar o mouse */
+.carousel-cursos-prev:hover .carousel-cursos-prev-icon,
+.carousel-cursos-next:hover .carousel-cursos-next-icon {
+    color: #ffffff; /* Muda a cor ao passar o mouse */
+    transform: scale(1.2); /* Aumenta ligeiramente a seta */
+}
+
+
+
+.btncursos {
+    display: block;
+    margin: 20px auto 0; /* Centraliza o botão e adiciona margem superior */
+    padding: 10px 20px;
+    background-color: #6c1e8e; /* Cor de fundo */
+    color: white; /* Cor da fonte */
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .btncursos:hover {
+    background-color: #53156c; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom */
+  }
+  
+  .btncursos:active {
+    background-color: #3e0e52; /* Cor ao clicar */
+  }
+
+/* Seção Contatos */
+#contatos {
+    background: linear-gradient(135deg, #471947, #4f3c54);
+    color: white;
+    border-radius: 0px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Títulos */
+  #contatos h3 {
+    font-size: 1.8rem;
+    color: #ecf0f1; /* Cinza claro */
+  }
+  
+  #contatos h5 {
+    font-size: 1.3rem;
+    color: #e2abf4; /* Cinza claro */
+    margin-bottom: 10px;
+  }
+  
+  /* Logos dos Parceiros */
+  .partner-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contatos */
+  #contatos ul {
+    font-size: 1.1rem;
+    padding: 0;
+    color: #ecf0f1;
+  }
+  
+  #contatos ul li {
+    line-height: 1.6;
+    border-left: 4px solid #000000;
+    padding-left: 10px;
+  }
+  
+  /* Botão Trabalhe Conosco */
+  .btn-trabalhe-conosco {
+    display: inline-block !important;
+    padding: 12px 30px !important;
+    background-color: #e0a3de !important; /* Vermelho realce */
+    color: rgb(0, 0, 0) !important;
+    border-radius: 50px !important;
+    
+    font-weight: bold !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .btn-trabalhe-conosco:hover {
+    background-color: #700c86 !important; /* Tom mais escuro no hover */
+    color: rgb(208, 197, 197)!important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)!important;
+  }
+
+/* Fundo da Seção */
+#conquista {
+  background: linear-gradient(135deg, #471947, #4f3c54);
+  color: #ffffff; /* Textos brancos para contraste */
+  padding: 40px 20px;
+  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+/* Título da Seção */
+#conquista h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #c6a5e7;
+}
+
+/* Cada Artigo */
+.conquista-item {
+  margin-bottom: 30px;
+}
+
+.conquista-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%; /* Formato circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Fundo para o conteúdo do artigo */
+.conquista-content {
+  background: rgba(255, 255, 255, 0.1); /* Fundo translúcido */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra leve */
+}
+
+/* Títulos dos alunos */
+.conquista-content h3 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Texto do artigo */
+.conquista-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffffff; /* Branco para contraste */
+}
+
+section {
+  scroll-margin-top: 130px; /* Ajuste para a altura do header */
+}
+
+
+.btn-buscar {
+  background-color: #000000; /* Fundo preto */
+  color: #ffffff; /* Texto branco */
+  border: none; /* Remove borda */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-weight: bold; /* Texto em negrito */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave */
+}
+
+.btn-buscar:hover {
+  background-color: #6c1e8e; /* Fundo roxo no hover */
+  color: #ffffff; /* Mantém o texto branco */
+  transform: scale(1.05); /* Leve aumento no hover */
+}
+
+/* Estilo geral do formulário */
+#matricula {
+  background: linear-gradient(135deg, #471947, #4f3c54); /* Fundo gradiente */
+  color: white; /* Texto branco */
+  padding: 40px 20px;
+  border-radius: 15px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Título */
+#matricula h2 {
+  color: #c6a5e7; /* Texto branco */
+  font-size: 2.5rem; /* Tamanho grande */
+  font-weight: bold; /* Negrito */
+  text-align: center; /* Centralizado */
+  margin-bottom: 30px;
+}
+
+/* Rótulos dos campos */
+#matricula .form-label {
+  color: #e0d6f5; /* Roxo claro */
+  font-weight: bold; /* Negrito */
+}
+
+/* Campos de entrada e seletores */
+#matricula .form-control,
+#matricula .form-select {
+  background-color: #95809b; /* Fundo roxo escuro */
+  color: #ffffff; /* Texto branco */
+  border: 1px solid #6c1e8e; /* Borda roxa */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 10px;
+  transition: all 0.3s ease; /* Transição suave */
+}
+
+#matricula .form-control:focus,
+#matricula .form-select:focus {
+  border-color: #a360c4; /* Borda roxa clara no foco */
+  box-shadow: 0 0 5px #a360c4; /* Brilho roxo no foco */
+}
+
+/* Botão de envio */
+#matricula button {
+  background-color: #6c1e8e; /* Roxo médio */
+  color: white; /* Texto branco */
+  font-weight: bold; /* Negrito */
+  padding: 12px 30px; /* Espaçamento interno */
+  border: none; /* Sem borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: all 0.3s ease; /* Transição suave */
+}
+
+#matricula button:hover {
+  background-color: #a360c4; /* Roxo claro no hover */
+  transform: scale(1.05); /* Aumenta ligeiramente no hover */
+}
+
+/* Estilo das opções do select */
+#matricula .form-select option {
+  background-color: #2f2233; /* Fundo roxo escuro */
+  color: #ffffff; /* Texto branco */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #matricula {
+    padding: 20px 10px;
+  }
+
+  #matricula h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Estilo geral para a seção Trabalhe Conosco */
+#trabalhe-conosco {
+  background: linear-gradient(135deg, #4f3c54, #2b1a2e); /* Fundo gradiente mais escuro */
+  color: white; /* Texto branco */
+  padding: 40px 20px;
+  border-radius: 15px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+  margin-bottom: 50px;
+}
+
+/* Título */
+#trabalhe-conosco h2 {
+  color: #ffffff; /* Texto branco */
+  font-size: 2.5rem; /* Tamanho grande */
+  font-weight: bold; /* Negrito */
+  text-align: center; /* Centralizado */
+  margin-bottom: 30px;
+}
+
+/* Texto introdutório */
+#trabalhe-conosco p {
+  color: #e0d6f5; /* Roxo claro */
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Rótulos dos campos */
+#trabalhe-conosco .form-label {
+  color: #e0d6f5; /* Roxo claro */
+  font-weight: bold; /* Negrito */
+}
+
+/* Campos de entrada e seletores */
+#trabalhe-conosco .form-control,
+#trabalhe-conosco .form-select {
+  background-color: #2f2233; /* Fundo roxo escuro */
+  color: #ffffff; /* Texto branco */
+  border: 1px solid #6c1e8e; /* Borda roxa */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 10px;
+  transition: all 0.3s ease; /* Transição suave */
+}
+
+#trabalhe-conosco .form-control:focus,
+#trabalhe-conosco .form-select:focus {
+  border-color: #a360c4; /* Borda roxa clara no foco */
+  box-shadow: 0 0 5px #a360c4; /* Brilho roxo no foco */
+}
+
+/* Botão de envio */
+#trabalhe-conosco button {
+  background-color: #6c1e8e; /* Roxo médio */
+  color: white; /* Texto branco */
+  font-weight: bold; /* Negrito */
+  padding: 12px 30px; /* Espaçamento interno */
+  border: none; /* Sem borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: all 0.3s ease; /* Transição suave */
+}
+
+#trabalhe-conosco button:hover {
+  background-color: #a360c4; /* Roxo claro no hover */
+  transform: scale(1.05); /* Aumenta ligeiramente no hover */
+}
+
+/* Estilo das opções do select */
+#trabalhe-conosco .form-select option {
+  background-color: #2f2233; /* Fundo roxo escuro */
+  color: #ffffff; /* Texto branco */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #trabalhe-conosco {
+    padding: 20px 10px;
+  }
+
+  #trabalhe-conosco h2 {
+    font-size: 2rem;
+  }
+
+  #trabalhe-conosco p {
+    font-size: 1rem;
+  }
+}
+
+.modal-content {
+  background: linear-gradient(135deg, #4f3c54, #2b1a2e); /* Fundo do modal */
+  color: rgb(255, 254, 254); /* Texto branco */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+.modal-header {
+  border-bottom: 1px solid #6c1e8e; /* Linha decorativa */
+}
+
+.modal-title {
+  color: #e0d6f5; /* Título roxo claro */
+  font-weight: bold; /* Negrito */
+}
+
+.modal-footer .btn-secondary {
+  background-color: #6c1e8e; /* Fundo roxo para botão "Cancelar" */
+  border: none;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: #a360c4; /* Fundo roxo mais claro no hover */
+}
+
+.modal-footer .btn-primary {
+  background-color: #6c1e8e; /* Fundo roxo para botão "Confirmar" */
+  border: none;
+}
+
+.modal-footer .btn-primary:hover {
+  background-color: #a360c4; /* Fundo roxo mais claro no hover */
+}

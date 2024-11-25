@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/logoIC.ico" type="image/x-icon" width="80%">
+    <title>Rise School | Cursos de Técnologia</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+         
+        <nav class="navbar navbar-expand-lg row">
+            <div class="container-fluid">
+                <div class="col-12 col-md-4 d-flex align-items-center">
+                    <a href="#"><img src="images/logocortada.png" alt="Logo" style="width: 180px; height: 90px;"></a>
+        
+                </div>
+                
+                <form class="d-flex col-12 col-md-4" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn-buscar" type="submit">Buscar</button>
+                </form>            
+              
+                
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse col-12 col-md-4" id="navbarNav">
+                <ul class="navbar-nav ms-auto"> 
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html#sobre">Sobre a Rise</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html#cursos">Cursos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html#conquista">Rise Heroes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="matricula.html">Matricule-se já</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html#contatos">Contatos</a>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+          </nav>
+
+              
+    </header>
+    <main>
+        <section id="trabalhe-conosco" class="container my-5 py-5">
+            <h2 class="text-center mb-4">Trabalhe Conosco</h2>
+            <p class="text-center mb-4">
+                Quer fazer parte da nossa equipe e contribuir para a transformação digital? Preencha o formulário abaixo
+                e envie seu currículo. Estamos sempre em busca de talentos para crescer juntos.
+            </p>
+            <form class="row g-3">
+                <!-- Dados Pessoais -->
+                <div class="col-md-6">
+                    <label for="nome" class="form-label">Nome Completo</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Seu nome completo" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="tel" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="linkedin" class="form-label">LinkedIn (Opcional)</label>
+                    <input type="url" class="form-control" id="linkedin" placeholder="https://linkedin.com/in/seuperfil">
+                </div>
+
+                <!-- Área de Interesse -->
+                <div class="col-md-6">
+                    <label for="area-interesse" class="form-label">Área de Interesse</label>
+                    <select id="area-interesse" class="form-select" required>
+                        <option value="" disabled selected>Escolha uma área</option>
+                        <option value="docente">Docente</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="Administrativo">Administrativo</option>
+                        <option value="suporte">Suporte Técnico</option>
+                        <option value="outras">Outras</option>
+                    </select>
+                </div>
+
+                <!-- Enviar Currículo -->
+                <div class="col-md-6">
+                    <label for="curriculo" class="form-label">Envie seu Currículo</label>
+                    <input type="file" class="form-control" id="curriculo" accept=".pdf,.doc,.docx" required>
+                </div>
+
+                <!-- Mensagem -->
+                <div class="col-12">
+                    <label for="mensagem" class="form-label">Mensagem (Opcional)</label>
+                    <textarea id="mensagem" class="form-control" rows="4" placeholder="Deixe uma mensagem ou apresente-se"></textarea>
+                </div>
+
+                <!-- Botão de Envio -->
+                <div class="col-12 text-center">
+                    <button type="button" class="btn btn-primary px-5 py-2" data-bs-toggle="modal" data-bs-target="#confirmModal">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+
+
+    <footer>
+        <p></p>
+        <b><p>&copy; 2024 Rise School. Todos os direitos reservados.</p></b>
+    </footer>
+    <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmModalLabel">Confirmação de Envio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-white">
+                    Tem certeza de que deseja enviar as informações do formulário?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Confirmar Envio</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
